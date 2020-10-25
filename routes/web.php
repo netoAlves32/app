@@ -1,3 +1,3 @@
 <?php
 
-Route::get('/', );
+Route::get('/
