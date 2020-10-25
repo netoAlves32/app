@@ -21,3 +21,7 @@ Route::get('Contactanos',function(){
 Route::get('/',function(){
     echo "<a href='".route('Contactanos')."'>Contacto</a><br>";
 });
+
+Route::get('/',function(){
+    return view('welcome');
+})->name('home');
