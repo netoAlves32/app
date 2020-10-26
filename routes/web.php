@@ -14,19 +14,20 @@
 //    return $saludo. "Galeria chocoana";
 //});
 
-Route::ge('Contactanos',function(){
-    return "Nuestro número es 3146810822";
-})->name('Contactanos');
+Route::view('/','home')->name('home');
+Route::view('/contactanos','contactanos')->name('contacto');
+Route::view('/contactanos','contactanos')->name('contacto');
+
 
 //Route::get('/',function(){
 //    echo "<a href='".route('Contactanos')."'>Contacto</a><br>";
 //});
 
-Route::get('/',function(){
-    $nombre = "Neto";
-    return view('home')->with('nombre',$nombre);
+//Route::get('/',function(){
+//  $nombre = "Neto";
+//  return view('home')->with('nombre',$nombre);
     //return view('home',['nombre', $nombre]);
     //return view('home', compact('nombre'))
-})->name('home');
+//})->name('home');
 
 //Route::view('/', 'home');
