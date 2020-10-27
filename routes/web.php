@@ -14,9 +14,14 @@
 //    return $saludo. "Galeria chocoana";
 //});
 
-Route::view('/','home')->name('home');
-Route::view('/contactanos','contactanos')->name('contacto');
-Route::view('/contactanos','contactanos')->name('contacto');
+Route::view('/','Home')->name('home');
+Route::view('/Contactanos','contactanos')->name('contacto');
+Route::view('/SobreNosotros','aboutUs')->name('about');
+Route::view('/Donacion','donacion')->name('donar');
+Route::view('/Portafolio','portafolio')->name('portafolio');
+Route::view('/Galeria','galeria')->name('galery');
+
+
 
 
 //Route::get('/',function(){

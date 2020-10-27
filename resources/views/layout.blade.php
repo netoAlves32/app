@@ -16,10 +16,5 @@
         <li><a href="/contactanos">Contactanos</a></li>
     </ul>
     </nav>
-    <h1>BIENVENIDOS</h1>
-     <!-- Como has estado <?php echo $nombre ?? "Invitado" ?> -->
-     <!-- Como has estado <?php echo "<script>alert('ALERTAA SCRIPT')</script>"?> -->
-     Como has estado {{$nombre ?? "Invitado"}}
 </body>
 </html>
-
