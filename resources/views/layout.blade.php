@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SatuFundacion</title>
+    <title>@yield('title','SatuFun')</title>
 </head>
 <body>
     <nav>
     <ul>
         <li><a href="/">Inicio</a></li>
-        <li><a href="/galeria">Galeria</a></li>
-        <li><a href="/aboutUs">Quienes somos?</a></li>
-        <li><a href="/portafolio">Nuestras actividades</a></li>
-        <li><a href="/donacion">Donación</a></li>
-        <li><a href="/contactanos">Contactanos</a></li>
+        <li><a href="/Galeria">Galeria</a></li>
+        <li><a href="/SobreNosotros">Quienes somos?</a></li>
+        <li><a href="/Portafolio">Nuestras actividades</a></li>
+        <li><a href="/Donacion">Donación</a></li>
+        <li><a href="/Contactanos">Contactanos</a></li>
     </ul>
     </nav>
+    @yield('content')
 </body>
 </html>
