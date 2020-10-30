@@ -1,7 +1,6 @@
 @extends('layout')
 
 @section('title','SatuFundacion')
-@endsection
 
 @section('content')
     <h1>BIENVENID@</h1>

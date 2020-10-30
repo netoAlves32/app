@@ -3,7 +3,6 @@
 
 
 @section('title','Contactanos')
-@endsection
 
 
 @section('content')

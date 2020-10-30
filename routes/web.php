@@ -13,12 +13,14 @@
 //Route::get('GaleriaInter/{saludo?}',function($saludo = "Nigeria"){
 //    return $saludo. "Galeria chocoana";
 //});
-$portafolio = [
 
-    ['title'=>'Proyecto #1'],
-    ['title'=>'Proyecto #2']
+//$portafolio = [
 
-];
+//     ['title'=>'Proyecto #1'],
+//     ['title'=>'Proyecto #2']
+
+//];
+Route::view('/Inicio','home')->name('home1');
 Route::view('/','Home')->name('home');
 Route::view('/Contactanos','contactanos')->name('contacto');
 Route::view('/SobreNosotros','aboutUs')->name('about');
