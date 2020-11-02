@@ -23,9 +23,9 @@ Route::view('/SobreNosotros','aboutUs')->name('about');
 Route::view('/Donacion','donacion')->name('donar');
 Route::view('/Galeria','galeria')->name('galery');
 
-Route::get('/Portafolio', 'App\Http\Controllers\pController@index')->name('portafolio');
+Route::get('/Portafolio', 'pController')->name('portafolio');
 
-Route::resource('projects', 'App\Http\Controllers\pController');
+Route::resource('projects', 'pController');
 
 //Route::get('/',function(){
 //    echo "<a href='".route('Contactanos')."'>Contacto</a><br>";
