@@ -14,20 +14,18 @@
 //    return $saludo. "Galeria chocoana";
 //});
 
-//$portafolio = [
+//use App\Http\Controllers\pController;
 
-//     ['title'=>'Proyecto #1'],
-//     ['title'=>'Proyecto #2']
-
-//];
 Route::view('/Inicio','home')->name('home1');
 Route::view('/','Home')->name('home');
 Route::view('/Contactanos','contactanos')->name('contacto');
 Route::view('/SobreNosotros','aboutUs')->name('about');
 Route::view('/Donacion','donacion')->name('donar');
-Route::view('/Portafolio','portafolio',compact('portafolio'))->name('portafolio');
 Route::view('/Galeria','galeria')->name('galery');
 
+Route::get('/Portafolio', 'App\Http\Controllers\pController@index')->name('portafolio');
+
+Route::resource('projects', 'App\Http\Controllers\pController');
 
 //Route::get('/',function(){
 //    echo "<a href='".route('Contactanos')."'>Contacto</a><br>";
