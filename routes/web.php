@@ -23,7 +23,7 @@ Route::view('/SobreNosotros','aboutUs')->name('about');
 Route::view('/Donacion','donacion')->name('donar');
 Route::view('/Galeria','galeria')->name('galery');
 
-Route::get('/Portafolio', 'pController')->name('portafolio');
+Route::get('/Portafolio', 'pController@index')->name('portafolio');
 
 Route::resource('projects', 'pController');
 
