@@ -16,7 +16,6 @@
 
 //use App\Http\Controllers\pController;
 
-Route::view('/Inicio','home')->name('home1');
 Route::view('/','Home')->name('home');
 Route::view('/Contactanos','contactanos')->name('contacto');
 Route::view('/SobreNosotros','aboutUs')->name('about');
